@@ -21,16 +21,18 @@ const HeroBanner1 = () => {
 	  };
 
       const heroContent = {
-        bg:'/assets/img/hero/hero-bg.jpg',  
-        subtitle:"go for advertising",
-        title:'think digital',
-        content:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or  randomised',
-        content2:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.',
-        img:'/assets/img/hero/hero-text.png',   
-        reviewlogo:'/assets/img/hero/logo.png',   
-        reviewimg:'/assets/img/hero/client.png',   
-        review:'450+ reviews',             
-      }
+        bg: "/assets/img/hero/hero-bg.jpg",
+        subtitle: "At Adyalam, we dont just market",
+        title: "we create identity, clarity, and measurable growth.",
+        content:
+          "we help you stand out in a crowded digital world and turn visibility into real results.Let’s Grow Your Brand",
+        content2:
+          "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.",
+        img: "/assets/img/hero/hero-text.png",
+        reviewlogo: "/assets/img/hero/logo.png",
+        reviewimg: "/assets/img/hero/client.png",
+        review: "450+ reviews",
+      };
 
     return (
         <section className="hero-section fix hero-1 bg-cover" data-background={heroContent.bg} >
@@ -51,7 +53,7 @@ const HeroBanner1 = () => {
                 <div className="col-xl-5 col-lg-6">
                     <div className="hero-content">
                         <span className="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">{heroContent.subtitle}</span>
-                        <h1 className="wow img-custom-anim-right" data-wow-duration="1.5s" data-wow-delay="0.2s">{heroContent.title}</h1>
+                        <h3 className="wow img-custom-anim-right text-white" data-wow-duration="1.5s" data-wow-delay="0.2s">{heroContent.title}</h3>
                         <p className="wow fadeInUp" data-wow-delay=".3s">
                         {heroContent.content}
                         </p>
@@ -68,10 +70,10 @@ const HeroBanner1 = () => {
                 <div className="col-xl-3 col-lg-6">
                     <div className="video-right">
                         
-                        <p className="wow fadeInUp" data-wow-delay=".5s">
+                        {/* <p className="wow fadeInUp" data-wow-delay=".5s">
                         {heroContent.content2}
-                        </p>
-                        <div className="client-items wow fadeInUp" data-wow-delay=".7s">
+                        </p> */}
+                        {/* <div className="client-items wow fadeInUp" data-wow-delay=".7s">
                             <div className="client-logo">
                                 <img src={heroContent.reviewlogo} alt="img" />
                             </div>
@@ -88,7 +90,7 @@ const HeroBanner1 = () => {
                                     <span>{heroContent.review}</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

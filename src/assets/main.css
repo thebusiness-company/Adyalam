@@ -571,7 +571,7 @@ span {
 .about-wrapper-2 .about-content .icon-items-area {
   margin-top: 40px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -8148,4 +8148,16 @@ input.main-search-input::placeholder {
   .news-section {
     display: none;
   }
+}
+.common-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+.service-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+.service-list li {
+  font-size: 20px;
+  font-weight: 600;
 }

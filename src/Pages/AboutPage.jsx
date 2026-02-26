@@ -11,7 +11,7 @@ const AboutPage = () => {
         <div>
             <BreadCumb
                 bgimg="/assets/img/breadcrumb.jpg"
-                Title="about us"
+                Title="Our Story"
             ></BreadCumb>
             <About2 addclass="about-section-2 fix section-padding"></About2>
             <Counter3></Counter3>

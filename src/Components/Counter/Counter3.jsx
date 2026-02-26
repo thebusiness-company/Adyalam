@@ -33,7 +33,7 @@ const Counter3 = () => {
                             Make your marketing <br/> more effective
                         </h2>
                     </div>
-                    <div className="counter-box-area">
+                    {/* <div className="counter-box-area">
                         <div className="counter-text wow fadeInUp" data-wow-delay=".3s">
                             <h2>
                                 <span className="count">19.4</span>K
@@ -52,7 +52,7 @@ const Counter3 = () => {
                             </h2>
                             <p>Team Members</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="cta-video-image wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
                     <img src="/assets/img/cta-video.jpg" alt="img" />

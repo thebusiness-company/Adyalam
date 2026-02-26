@@ -27,7 +27,7 @@ const CaseStudy1 = () => {
                 <div className="section-title-area">
                     <div className="section-title">
                         <div className="sub-title wow fadeInUp">
-                            <span>Case Studies</span>
+                            <span>Blogs</span>
                         </div>
                         <h2 className="wow fadeInUp" data-wow-delay=".3s">
                             We Are A Creative Digital <br/>
