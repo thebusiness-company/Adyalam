@@ -61,7 +61,7 @@ const HeroBanner1 = () => {
                 </div>
                 <div className="col-xl-4 col-lg-6">
                     <div className="hero-image">
-                        <img src="/assets/img/hero/hero-image.png" alt="img" className=" wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
+                        <img src="/assets/img/hero/heroimage.png" alt="img" className="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
                         <div className="bg-shape">
                             <img src="/assets/img/hero/bg-shape.png" alt="img" />
                         </div>

@@ -179,7 +179,7 @@ const Footer2 = () => {
                 <div className="container">
                     <div className="footer-wrapper d-flex align-items-center justify-content-between">
                         <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
-                            © All Copyright 2024 by Digtek
+                            © All Copyright 2026 by Adyalam
                         </p>
                         <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
                             <li>

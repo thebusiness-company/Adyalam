@@ -6,7 +6,7 @@ const BlogDetails = () => {
             <div className="container">
                 <div className="news-details-wrapper">
                     <div className="row g-4">
-                        <div className="col-12 col-lg-8">
+                        <div className="col-12">
                             <div className="news-post-details">
                                 <div className="single-news-post">
                                     <div className="post-featured-thumb">
@@ -63,7 +63,7 @@ const BlogDetails = () => {
                                         </p>
                                     </div>
                                 </div>
-                                <div className="row tag-share-wrap mt-4 mb-5">
+                                {/* <div className="row tag-share-wrap mt-4 mb-5">
                                     <div className="col-lg-8 col-12">
                                         <div className="tagcloud"> 
                                             <span>Tags:</span>                                  
@@ -81,8 +81,8 @@ const BlogDetails = () => {
                                         <a href="#"><i className="bi bi-linkedin"></i></a>                                 
                                         </div>
                                     </div>
-                                </div>
-                                <div className="comments-area">
+                                </div> */}
+                                {/* <div className="comments-area">
                                     <div className="comments-heading">
                                         <h3>02 Comments</h3>
                                     </div>
@@ -120,8 +120,8 @@ const BlogDetails = () => {
                                             </p>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="comment-form-wrap pt-5">
+                                </div> */}
+                                {/* <div className="comment-form-wrap pt-5">
                                     <h3>Leave a Comment</h3>
                                     <form action="#" id="contact-form" method="POST">
                                         <div className="row g-4">
@@ -150,10 +150,10 @@ const BlogDetails = () => {
                                             </div>
                                         </div>
                                     </form>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
-                        <div className="col-12 col-lg-4">
+                        {/* <div className="col-12 col-lg-4">
                             <div className="main-sidebar sticky-style">
                                 <div className="single-sidebar-widget">
                                     <div className="wid-title">
@@ -244,7 +244,7 @@ const BlogDetails = () => {
 
 
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
