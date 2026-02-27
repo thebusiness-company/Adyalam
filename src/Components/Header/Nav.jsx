@@ -8,9 +8,9 @@ export default function Nav({ setMobileToggle }) {
         <Link to="/">Home</Link>
         
       </li>
-      <li className="menu-item-has-children">
-        <Link to="#">Pages</Link>
-        <DropDown>
+      <li className="menu-item">
+        <Link to="/about">Our Story</Link>
+        {/* <DropDown>
           <ul>
             <li>
               <Link to="/about" onClick={() => setMobileToggle(false)}>
@@ -43,14 +43,14 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>                         
           </ul>
-        </DropDown>
+        </DropDown> */}
       </li>  
 
-      <li className="menu-item-has-children">
+      <li className="menu-item">
         <Link to="/service" onClick={() => setMobileToggle(false)}>
           Services
         </Link>
-        <DropDown>
+        {/* <DropDown>
           <ul>
             <li>
               <Link to="/service" onClick={() => setMobileToggle(false)}>
@@ -63,10 +63,10 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>
           </ul>
-        </DropDown>
+        </DropDown> */}
       </li>
 
-      <li className="menu-item-has-children">
+      {/* <li className="menu-item-has-children">
         <Link to="/project" onClick={() => setMobileToggle(false)}>
         Project
         </Link>
@@ -84,13 +84,13 @@ export default function Nav({ setMobileToggle }) {
             </li>
           </ul>
         </DropDown>
-      </li> 
+      </li>  */}
       
-      <li className="menu-item-has-children">
+      <li className="menu-item">
         <Link to="/blog" onClick={() => setMobileToggle(false)}>
           Blog
         </Link>
-        <DropDown>
+        {/* <DropDown>
           <ul>
             <li>
               <Link to="/blog" onClick={() => setMobileToggle(false)}>
@@ -111,7 +111,7 @@ export default function Nav({ setMobileToggle }) {
               </Link>
             </li>
           </ul>
-        </DropDown>
+        </DropDown> */}
       </li>
       <li>
         <Link to="/contact" onClick={() => setMobileToggle(false)}>

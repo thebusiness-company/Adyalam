@@ -34,9 +34,20 @@ const Testimonial3 = () => {
       };  
 
     const testimonialContent = [
-        {img:'/assets/img/testimonial/05.png', subtitle:'Trader, USA', title:'Esther Howard', content:' Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.'},
-        {img:'/assets/img/testimonial/05.png', subtitle:'Trader, USA', title:'Esther Howard', content:' Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris nullam the as integer quam dolor nunc semper.  faucibus pulvinar neque. The as Suscipit tristique mauris consectetur platea.'},
-      ]; 
+      {
+        img: "/assets/img/testimonial/05.png",
+        subtitle: "Theoretical physicist",
+        title: "Albert Einstein",
+        content: " Creativity is intelligence having fun.",
+      },
+      {
+        img: "/assets/img/testimonial/05.png",
+        subtitle: "American industrialist and business magnate",
+        title: "Henry Ford",
+        content:
+          " Stopping advertising to save money is like stopping your watch to save time.",
+      },
+    ]; 
 
     return (
         <section className="testimonial-section-3 section-padding pt-0">

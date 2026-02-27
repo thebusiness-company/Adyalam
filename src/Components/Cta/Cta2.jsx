@@ -24,7 +24,7 @@ const Cta2 = () => {
                         </h2>
                     </div>
                     <div className="main-button wow fadeInUp" data-wow-delay=".5s">
-                        <Link to="/contact"> <span className="theme-btn">Talk to a Specialist </span><span className="arrow-btn"><i className="bi bi-arrow-up-right"></i></span></Link>
+                        <Link to="/contact"> <span className="theme-btn">Talk to Us </span><span className="arrow-btn"><i className="bi bi-arrow-up-right"></i></span></Link>
                     </div>
                 </div>
             </div>

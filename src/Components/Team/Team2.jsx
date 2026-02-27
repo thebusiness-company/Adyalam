@@ -56,7 +56,7 @@ const Team2 = () => {
         <section className="team-section-33 section-padding">
             <div className="container">
                 <div className="row g-4">
-                    <div className="col-lg-6">
+                    {/* <div className="col-lg-6">
                         <div className="team-left-content sticky-style ">
                             <div className="section-title">
                                 <div className="sub-title bg-color-2 wow fadeInUp">
@@ -71,8 +71,8 @@ const Team2 = () => {
                                 <button onClick={next} className="array-next"><i className="bi bi-arrow-down"></i></button>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-6">
+                    </div> */}
+                    {/* <div className="col-lg-6">
                         <div className="swiper team-slider">
                             <div className="swiper-wrapper cs_slider_gap_30">
                             <Slider ref={sliderRef} {...settings}>
@@ -104,7 +104,7 @@ const Team2 = () => {
                                  </Slider>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

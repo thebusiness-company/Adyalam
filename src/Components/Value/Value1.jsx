@@ -41,7 +41,7 @@ const Value1 = () => {
           >
             <h2>Our Approach</h2>
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {chooseContent.map((item, i) => (
               <div
                 key={i}

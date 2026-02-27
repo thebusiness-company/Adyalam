@@ -13,7 +13,7 @@ const ServicesPage = () => {
                 Title="Our Services"
             ></BreadCumb>  
             <Services3></Services3> 
-            <WhyChoose4></WhyChoose4>
+            {/* <WhyChoose4></WhyChoose4> */}
             <Pricing1 CoulmnClass="pricing-section section-padding"></Pricing1>      
             <Cta2></Cta2>
             <Testimonial2></Testimonial2>  

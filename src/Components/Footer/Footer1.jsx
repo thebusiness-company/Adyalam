@@ -95,7 +95,7 @@ const Footer1 = () => {
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                            <div className="single-footer-widget">
+                            {/* <div className="single-footer-widget">
                                 <div className="widget-head">
                                     <h3>Recent Posts</h3>
                                 </div>
@@ -139,7 +139,7 @@ const Footer1 = () => {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".8s">
                             <div className="single-footer-widget">
@@ -157,7 +157,7 @@ const Footer1 = () => {
                                             <a href="tel:2086660112">+208-666-0112</a>
                                         </li>
                                     </ul>
-                                    <div className="footer-input">
+                                    {/* <div className="footer-input">
                                         <input type="email" id="email2" placeholder="Your email address" /> 
                                         <button className="newsletter-btn" type="submit">
                                         <i className="bi bi-arrow-right"></i>
@@ -168,7 +168,7 @@ const Footer1 = () => {
                                         <label className="form-check-label" htmlFor="flexCheckChecked">
                                             I agree to the <a href="#">Privacy Policy.</a>
                                         </label>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

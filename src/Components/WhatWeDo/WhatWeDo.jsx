@@ -65,11 +65,11 @@ const WhatWeDo = () => {
               {parse(heading.content)}
             </p> */}
           </div>
-          <div className="row">
+          <div className="row justify-content-center">
             {whyContent.map((item, i) => (
               <div
                 key={i}
-                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+                className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp d-flex"
                 data-wow-delay=".3s"
               >
                 <div className="service-box-items">
