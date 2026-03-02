@@ -38,14 +38,14 @@ const blogs = [
 const BlogsDisplay = () => {
     const [activeBlog, setActiveBlog] = useState(blogs[0].id);
 
-    // useEffect(() => {
-    //     document.querySelectorAll('.box').forEach(box => {
-    //         box.addEventListener('mouseenter', function () {
-    //             document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
-    //             this.classList.add('active');
-    //         });
-    //     });
-    // }, []);
+    useEffect(() => {
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    }, []);
 
     return (
       <section className="case-study-section fix section-padding">

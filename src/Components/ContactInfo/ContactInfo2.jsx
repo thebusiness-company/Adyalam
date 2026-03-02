@@ -1,5 +1,41 @@
 
+import React, { useState } from "react";
+import { API_BASE_URL } from "../../config";
+
 const ContactInfo2 = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(null);
+    const [error, setError] = useState(null);
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+      setSuccess(null);
+      setError(null);
+      try {
+        const res = await fetch(`${API_BASE_URL}/contact`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        });
+        if (!res.ok) {
+          const errText = await res.text();
+          throw new Error(errText || "Failed to submit");
+        }
+        setSuccess("Message sent successfully.");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } catch (err) {
+        setError(err.message || "Submission failed");
+      } finally {
+        setLoading(false);
+      }
+    };
+
     return (
       <div>
         <section className="contact-info-section fix section-padding">
@@ -51,7 +87,7 @@ const ContactInfo2 = () => {
                   </div>
                   <div className="content">
                     <h3>
-                      Hot:<a href="tel:+2086660112">+208-666-0112</a>
+                      Hot:<a href="tel:+2086660112">+208-666-2</a>
                     </h3>
                     <p>
                       Call us any kind suppor,we <br />
@@ -86,7 +122,7 @@ const ContactInfo2 = () => {
                       eros, ut blandit felis odio in turpis. Quisque rhoncus,
                       eros in auctor ultrices,
                     </p>
-                    <form id="contact-form" className="contact-form-items">
+                    <form id="contact-form" className="contact-form-items" onSubmit={handleSubmit}>
                       <div className="row g-4">
                         <div
                           className="col-lg-6 wow fadeInUp"
@@ -99,6 +135,8 @@ const ContactInfo2 = () => {
                               name="name"
                               id="name"
                               placeholder="Your Name"
+                              value={name}
+                              onChange={(e) => setName(e.target.value)}
                             />
                           </div>
                         </div>
@@ -109,10 +147,12 @@ const ContactInfo2 = () => {
                           <div className="form-clt">
                             <span>Your Email*</span>
                             <input
-                              type="text"
+                              type="email"
                               name="email"
                               id="email"
                               placeholder="Your Email"
+                              value={email}
+                              onChange={(e) => setEmail(e.target.value)}
                             />
                           </div>
                         </div>
@@ -126,6 +166,8 @@ const ContactInfo2 = () => {
                               name="message"
                               id="message"
                               placeholder="Write Message"
+                              value={message}
+                              onChange={(e) => setMessage(e.target.value)}
                             ></textarea>
                           </div>
                         </div>
@@ -134,9 +176,15 @@ const ContactInfo2 = () => {
                           data-wow-delay=".9s"
                         >
                           <button type="submit" className="theme-btn">
-                            Send Message <i className="bi bi-arrow-right"></i>
+                            {loading ? "Sending..." : "Send Message"} <i className="bi bi-arrow-right"></i>
                           </button>
                         </div>
+                        {success && (
+                          <div className="col-12 mt-2 text-success">{success}</div>
+                        )}
+                        {error && (
+                          <div className="col-12 mt-2 text-danger">{error}</div>
+                        )}
                       </div>
                     </form>
                   </div>
