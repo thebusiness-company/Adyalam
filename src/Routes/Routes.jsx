@@ -19,6 +19,7 @@ import CaseStudyDetailsPage from "../Pages/CaseStudyDetailsPage";
 import BlogRightSidebar from "../Pages/BlogRightSidebar";
 import BlogPage from "../Pages/BlogPage";
 import BlogDetailsPage from "../Pages/BlogDetailsPage";
+import AdminBlog from "../Pages/AdminBlog";
 
 export const router = createBrowserRouter([
     {
@@ -74,9 +75,13 @@ export const router = createBrowserRouter([
           element: <BlogPage></BlogPage>,
         }, 
         {
-          path: "/blog/blog-details",
+          path: "/blog/:id",
           element: <BlogDetailsPage></BlogDetailsPage>,
-        },                                                                             
+        },                                                                              
+        {
+          path: "/admin/blogs",
+          element: <AdminBlog></AdminBlog>,
+        },                                                                            
       ],
     }, 
     {

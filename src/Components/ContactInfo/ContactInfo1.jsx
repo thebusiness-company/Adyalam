@@ -1,5 +1,39 @@
+import React, { useState } from "react";
 
 const ContactInfo1 = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(null);
+    const [error, setError] = useState(null);
+
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setLoading(true);
+      setSuccess(null);
+      setError(null);
+      try {
+        const res = await fetch("http://localhost:8000/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
+        });
+        if (!res.ok) {
+          const errText = await res.text();
+          throw new Error(errText || "Failed to submit");
+        }
+        setSuccess("Message sent successfully.");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } catch (err) {
+        setError(err.message || "Submission failed");
+      } finally {
+        setLoading(false);
+      }
+    };
+
     return (
       <section className="contact-section fix section-padding">
         <div className="container">
@@ -23,7 +57,7 @@ const ContactInfo1 = () => {
               <div className="col-xl-6">
                 <div className="contact-form-area">
                   <h3>Get in Touch</h3>
-                  <form action="#" id="contact-form" method="POST">
+                  <form id="contact-form" onSubmit={handleSubmit}>
                     <div className="row g-4">
                       <div className="col-lg-6">
                         <div className="form-clt">
@@ -32,16 +66,20 @@ const ContactInfo1 = () => {
                             name="name"
                             id="name"
                             placeholder="Full Name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
                           />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="form-clt">
                           <input
-                            type="text"
+                            type="email"
                             name="email"
                             id="email"
                             placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                           />
                         </div>
                       </div>
@@ -77,6 +115,8 @@ const ContactInfo1 = () => {
                             name="message"
                             id="message"
                             placeholder="Messages"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
                           ></textarea>
                         </div>
                       </div>
@@ -99,10 +139,16 @@ const ContactInfo1 = () => {
                       </div>
                       <div className="col-lg-12">
                         <button type="submit" className="theme-btn">
-                          Submit Now
+                          {loading ? "Sending..." : "Submit Now"}
                           <i className="bi bi-arrow-right ms-1"></i>
                         </button>
                       </div>
+                      {success && (
+                        <div className="col-12 mt-2 text-success">{success}</div>
+                      )}
+                      {error && (
+                        <div className="col-12 mt-2 text-danger">{error}</div>
+                      )}
                     </div>
                   </form>
                 </div>
