@@ -87,9 +87,9 @@ const WhatWeDo = () => {
                       <li>{item.list3}</li>
                       <li>{item.list4}</li>
                     </ul>
-                    <Link to="/service/service-details" className="link-btn">
+                    {/* <Link to="/service/service-details" className="link-btn">
                       Read More <i className="bi bi-arrow-right"></i>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

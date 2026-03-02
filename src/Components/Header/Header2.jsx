@@ -42,7 +42,7 @@ export default function Header2({ variant }) {
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" to="/">
                   <img
-                    src="/assets/img/logo/Adyalam.png"
+                    src="/assets/img/logo/adyalamlogo.png"
                     width={120}
                     height={120}
                     alt="Logo"

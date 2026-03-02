@@ -1,16 +1,51 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const CaseStudy1 = () => {
+const blogs = [
+  {
+    id: 1,
+    title: "How Digital Marketing Drives Growth",
+    description:
+      "Learn how strategic marketing boosts business visibility and conversions.",
+    image: "/assets/img/case-studies/01.jpg",
+  },
+  {
+    id: 2,
+    title: "SEO in 2026",
+    description: "Search engine optimization trends you must know.",
+    image: "/assets/img/case-studies/01.jpg",
+  },
+  {
+    id: 3,
+    title: "Social Media Strategies",
+    description: "Building brand awareness through social platforms.",
+    image: "/assets/img/case-studies/01.jpg",
+  },
+  {
+    id: 4,
+    title: "Email Marketing Tips",
+    description: "How to increase open rates and conversions.",
+    image: "/assets/img/case-studies/01.jpg",
+  },
+  {
+    id: 5,
+    title: "Content Marketing Secrets",
+    description: "Create engaging content that converts.",
+    image: "/assets/img/case-studies/01.jpg",
+  },
+];
 
-    useEffect(() => {
-        document.querySelectorAll('.box').forEach(box => {
-            box.addEventListener('mouseenter', function () {
-                document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-    }, []);
+const BlogsDisplay = () => {
+    const [activeBlog, setActiveBlog] = useState(blogs[0].id);
+
+    // useEffect(() => {
+    //     document.querySelectorAll('.box').forEach(box => {
+    //         box.addEventListener('mouseenter', function () {
+    //             document.querySelectorAll('.box').forEach(b => b.classList.remove('active'));
+    //             this.classList.add('active');
+    //         });
+    //     });
+    // }, []);
 
     return (
         <section className="case-study-section fix section-padding">
@@ -44,8 +79,8 @@ const CaseStudy1 = () => {
                         <div className="col-xxl-6 wow fadeInUp">
                             <div className="case-study-box-items">
                                 <div className="thumb">
-                                    <img src="/assets/img/case-studies/01.jpg" alt="img" />
-                                    <div className="post-box-items">
+                                    <img src="/assets/img/case-studies/blog1.png" alt="img" />
+                                    {/* <div className="post-box-items">
                                         <ul>
                                             <li>
                                                 <Link to="/project/project-details">Real-time Analytics <i className="bi bi-arrow-up-right"></i></Link>
@@ -62,7 +97,7 @@ const CaseStudy1 = () => {
                                                 <Link to="/project/project-details">Advance <i className="bi bi-arrow-up-right"></i></Link>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     <h3 className="project-title">
                                         <Link to="/project/project-details">
                                             <img src="/assets/img/case-studies/icon.png" alt="img" />
@@ -149,4 +184,4 @@ const CaseStudy1 = () => {
     );
 };
 
-export default CaseStudy1;
+export default BlogsDisplay;

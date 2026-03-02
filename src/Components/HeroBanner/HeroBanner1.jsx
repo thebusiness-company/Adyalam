@@ -21,8 +21,8 @@ const HeroBanner1 = () => {
 	  };
 
       const heroContent = {
-        bg: "/assets/img/hero/hero-bg.jpg",
-        subtitle: "At Adyalam, we dont just market",
+        bg: "/assets/img/hero/herobackground.png",
+        subtitle: "",
         title: "we create identity, clarity, and measurable growth.",
         content:
           "we help you stand out in a crowded digital world and turn visibility into real results.Let’s Grow Your Brand",
@@ -35,45 +35,74 @@ const HeroBanner1 = () => {
       };
 
     return (
-        <section className="hero-section fix hero-1 bg-cover" data-background={heroContent.bg} >
+      <section
+        className="hero-section fix hero-1 bg-cover"
+        data-background={heroContent.bg}
+      >
         <div className="mike-shape">
-            <img src="/assets/img/hero/mike-shape.png" alt="img" />
+          <img src="/assets/img/hero/mike-shape.png" alt="img" />
         </div>
         <div className="energy-shape float-bob-y">
-            <img src="/assets/img/hero/energy-shape.png" alt="img" />
+          <img src="/assets/img/hero/energy-shape.png" alt="img" />
         </div>
         <div className="rocket-shape">
-            <img src="/assets/img/hero/rocket.png" alt="img" className="float-bob-y" />
+          <img
+            src="/assets/img/hero/rocket.png"
+            alt="img"
+            className="float-bob-y"
+          />
         </div>
         <div className="container-fluid">
-            <div className="hero-title wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                <img src={heroContent.img} alt="img" />      
+          <div
+            className="hero-title wow img-custom-anim-left"
+            data-wow-duration="1.5s"
+            data-wow-delay="0.3s"
+          >
+            <img src={heroContent.img} alt="img" />
+          </div>
+          <div className="row g-4 align-items-center">
+            <div className="col-xl-5 col-lg-6">
+              <div className="hero-content">
+                <span
+                  className="wow img-custom-anim-left"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.2s"
+                >
+                  <span className="hero-responsive-text">At Adyalam,</span> we
+                  dont just market
+                </span>
+                <h3
+                  className="wow img-custom-anim-right text-white"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.2s"
+                >
+                  {heroContent.title}
+                </h3>
+                <p className="wow fadeInUp" data-wow-delay=".3s">
+                  {heroContent.content}
+                </p>
+              </div>
             </div>
-            <div className="row g-4 align-items-center">
-                <div className="col-xl-5 col-lg-6">
-                    <div className="hero-content">
-                        <span className="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.2s">{heroContent.subtitle}</span>
-                        <h3 className="wow img-custom-anim-right text-white" data-wow-duration="1.5s" data-wow-delay="0.2s">{heroContent.title}</h3>
-                        <p className="wow fadeInUp" data-wow-delay=".3s">
-                        {heroContent.content}
-                        </p>
-                    </div>
+            <div className="col-xl-4 col-lg-6">
+              <div className="hero-image">
+                <img
+                  src="/assets/img/hero/hero-main1.png"
+                  alt="img"
+                  className="wow img-custom-anim-left"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0.3s"
+                />
+                <div className="bg-shape">
+                  <img src="/assets/img/hero/bg-shape.png" alt="img" />
                 </div>
-                <div className="col-xl-4 col-lg-6">
-                    <div className="hero-image">
-                        <img src="/assets/img/hero/heroimage.png" alt="img" className="wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s" />
-                        <div className="bg-shape">
-                            <img src="/assets/img/hero/bg-shape.png" alt="img" />
-                        </div>
-                    </div>
-                </div>
-                <div className="col-xl-3 col-lg-6">
-                    <div className="video-right">
-                        
-                        {/* <p className="wow fadeInUp" data-wow-delay=".5s">
+              </div>
+            </div>
+            <div className="col-xl-3 col-lg-6">
+              <div className="video-right">
+                {/* <p className="wow fadeInUp" data-wow-delay=".5s">
                         {heroContent.content2}
                         </p> */}
-                        {/* <div className="client-items wow fadeInUp" data-wow-delay=".7s">
+                {/* <div className="client-items wow fadeInUp" data-wow-delay=".7s">
                             <div className="client-logo">
                                 <img src={heroContent.reviewlogo} alt="img" />
                             </div>
@@ -91,16 +120,16 @@ const HeroBanner1 = () => {
                                 </div>
                             </div>
                         </div> */}
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
         <VideoModal
-            isTrue={toggle}
-            iframeSrc={iframeSrc}
-            handelClose={handelClose}        
-        ></VideoModal>        
-    </section>
+          isTrue={toggle}
+          iframeSrc={iframeSrc}
+          handelClose={handelClose}
+        ></VideoModal>
+      </section>
     );
 };
 

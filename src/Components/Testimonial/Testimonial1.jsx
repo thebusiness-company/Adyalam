@@ -45,9 +45,54 @@ const Testimonial1 = () => {
       }; 
 
     const testimonialContent = [
-        {img:'/assets/img/testimonial/01.png', subtitle:'Nursing Assistant', title:'Esther Howard', content:'Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean'},
-        {img:'/assets/img/testimonial/02.png', subtitle:'Nursing Assistant', title:'Courtney Henry', content:'Consectetur adipiscing elit. Integer nunc viverra laoreet est the is porta pretium metus aliquam eget maecenas porta is nunc viverra Aenean'},
-      ]; 
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title:
+          "“We finally found the best digital marketing agency in Chennai.”",
+        subtitle: "Arun Balakrishnan",
+        content:
+          "After struggling with inconsistent marketing, Adyalam helped us with social media management, SEO, and lead generation. We now receive regular enquiries and have a much stronger online presence.",
+      },
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title: "“Their SEO and Google Ads actually brought us customers.”",
+        subtitle: "Deepa Krishnamurthy",
+        content:
+          "Adyalam optimized our website and ran targeted Google campaigns that improved our search visibility. We started ranking better and saw quality leads coming in within a short time.",
+      },
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title: "R. Karthikeyan",
+        content:
+          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+      },
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title:
+          "“From content creation to WhatsApp marketing, everything worked together.”",
+        subtitle: "R. Karthikeyan",
+        content:
+          "Adyalam handled our digital marketing end-to-end — reels, content, email marketing, and WhatsApp campaigns. Customers now connect with us faster and more frequently.",
+      },
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title: "Anitha Patil",
+        content:
+          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+      },
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title: "R. Karthikeyan",
+        content:
+          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+      },
+      {
+        img: "/assets/img/testimonial/usericon.jpeg",
+        title: "R. Karthikeyan",
+        content:
+          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+      },
+    ]; 
 
     const chooseContent = {
       list1: " Strong brand recognition",
@@ -163,8 +208,8 @@ const Testimonial1 = () => {
                   data-wow-delay=".3s"
                 >
                   <div className="client-img">
-                    <img src="/assets/img/testimonial/10.png" alt="img" />
-                    <div className="content">
+                    {/* <img src="/assets/img/testimonial/10.png" alt="img" /> */}
+                    {/* <div className="content">
                       <div className="star">
                         <i className="bi bi-star-fill"></i>
                         <i className="bi bi-star-fill"></i>
@@ -173,7 +218,7 @@ const Testimonial1 = () => {
                         <i className="bi bi-star-fill"></i>
                       </div>
                       <p>15k+(reviews)</p>
-                    </div>
+                    </div> */}
                   </div>
                   <div
                     className="array-button wow fadeInUp"
@@ -202,7 +247,7 @@ const Testimonial1 = () => {
                               />
                             </div>
                             <div className="testimonial-img">
-                              <img src={item.img} alt="img" />
+                              <img src={item.img} alt="img" className="object-cover" />
                               <div className="shape-img">
                                 <img
                                   src="/assets/img/testimonial/shape.png"
@@ -212,14 +257,14 @@ const Testimonial1 = () => {
                             </div>
                             <div className="content">
                               <div className="client-info">
-                                <div className="star">
+                                {/* <div className="star">
                                   <i className="bi bi-star-fill"></i>
                                   <i className="bi bi-star-fill"></i>
                                   <i className="bi bi-star-fill"></i>
                                   <i className="bi bi-star-fill"></i>
                                   <i className="bi bi-star-fill"></i>
-                                </div>
-                                <h5>{item.title}</h5>
+                                </div> */}
+                                <h6 className="mt-10">{item.title}</h6>
                                 <span>{item.subtitle}</span>
                               </div>
                               <p>{item.content}</p>

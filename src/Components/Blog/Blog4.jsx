@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchBlogs } from "../../api/blogApi";
+import { API_BASE_URL } from "../../config";
 
 const Blog4 = () => {
   const [blogs, setBlogs] = useState([]);
@@ -36,7 +37,7 @@ const Blog4 = () => {
                   <img
                     src={
                       item.image_url
-                        ? `http://localhost:8000${item.image_url}`
+                        ? `${API_BASE_URL}${item.image_url}`
                         : "/assets/img/news/01.jpg"
                     }
                     alt={item.title}

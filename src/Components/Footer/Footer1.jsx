@@ -64,7 +64,7 @@ const Footer1 = () => {
                                     <li>
                                         <Link to="/about">
                                         <i className="bi bi-arrow-right"></i>
-                                            Digtek About
+                                            Our Story
                                         </Link>
                                     </li>
                                     <li>
