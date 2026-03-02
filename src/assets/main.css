@@ -8146,11 +8146,11 @@ input.main-search-input::placeholder {
 .testimonial-slider-2 .slick-slide img{
   display: unset;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .news-section {
     display: none;
   }
-}
+} */
 .common-list {
   list-style: disc;
   padding-left: 20px;

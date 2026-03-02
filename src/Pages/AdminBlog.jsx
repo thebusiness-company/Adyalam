@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { API_BASE_URL } from "../config";
 
 const AdminBlog = () => {
   const [title, setTitle] = useState("");
@@ -23,7 +24,7 @@ const AdminBlog = () => {
       // allow providing an external image url as fallback
       if (imageUrl) form.append("image_url_form", imageUrl);
 
-      const res = await fetch("http://localhost:8000/blogs", {
+      const res = await fetch(`${API_BASE_URL}/blogs`, {
         method: "POST",
         body: form,
       });

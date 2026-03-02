@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
+import { API_BASE_URL } from "../../config";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const BlogDetails = () => {
     const { id } = useParams();
@@ -12,7 +12,7 @@ const BlogDetails = () => {
     useEffect(() => {
         const fetchPost = async () => {
             try {
-                const res = await fetch(`${API}/blogs/${id}`);
+                const res = await fetch(`${API_BASE_URL}/blogs/${id}`);
                 if (!res.ok) throw new Error("Not found");
 
                 const data = await res.json();
@@ -51,7 +51,7 @@ const BlogDetails = () => {
                                             <img
                                                 src={
                                                     post.image_url
-                                                        ? `${API}${post.image_url}`
+                                                        ? `${API_BASE_URL}${post.image_url}`
                                                         : "/assets/img/news/details-1.jpg"
                                                 }
                                                 alt={post.title}
