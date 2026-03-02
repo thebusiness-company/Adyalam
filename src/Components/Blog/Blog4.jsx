@@ -19,7 +19,7 @@ const Blog4 = () => {
         <div className="container">
             <div className="row g-4">
             {blogContent.map((item, i) => (
-                <div key={i} className="col-xl-4 col-lg-6 col-md-6">
+                <div key={i} className="col-12 col-xl-4 col-lg-6 col-md-6">
                     <div className="news-box-items mt-0">
                         <div className="news-image wow img-custom-anim-top" data-wow-duration="1.5s" data-wow-delay="0.2s">
                             <img src={item.img} alt="img" />

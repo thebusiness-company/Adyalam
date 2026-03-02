@@ -35,13 +35,13 @@ const Testimonial3 = () => {
 
     const testimonialContent = [
       {
-        img: "/assets/img/testimonial/05.png",
+        img: "/assets/img/quotes/einstein.png",
         subtitle: "Theoretical physicist",
         title: "Albert Einstein",
         content: " Creativity is intelligence having fun.",
       },
       {
-        img: "/assets/img/testimonial/05.png",
+        img: "/assets/img/quotes/henryford.png",
         subtitle: "American industrialist and business magnate",
         title: "Henry Ford",
         content:
@@ -92,7 +92,7 @@ const Testimonial3 = () => {
                                     </p>
                                     <div className="client-info">
                                         <div className="client-img">
-                                            <img src={item.img} alt="img" />
+                                            <img src={item.img} alt={item.title} />
                                         </div>
                                         <div className="content">
                                             <h6>{item.title}</h6>

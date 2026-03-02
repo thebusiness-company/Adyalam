@@ -11,7 +11,7 @@ const SuccessStories = () => {
     return (
       <section
         className="audience-section fix section-padding bg-cover"
-        data-background="/assets/img/audience-bg.jpg"
+        data-background="/assets/img/hero/herobackground.png"
       >
         <div className="container">
           <div className="audience-wrapper">
@@ -81,7 +81,7 @@ const SuccessStories = () => {
                     <img src="/assets/img/audience-img.jpg" alt="img" />
                   </div>
                   {/* <div className="counter-box-area"> */}
-                    {/* <div
+                  {/* <div
                       className="counter-box wow fadeInUp"
                       data-wow-delay=".5s"
                     >
@@ -96,7 +96,7 @@ const SuccessStories = () => {
                         </p>
                       </div>
                     </div> */}
-                    {/* <div
+                  {/* <div
                       className="counter-box wow fadeInUp"
                       data-wow-delay=".7s"
                     >
@@ -111,7 +111,7 @@ const SuccessStories = () => {
                         </p>
                       </div>
                     </div> */}
-                    {/* <div
+                  {/* <div
                       className="counter-box wow fadeInUp"
                       data-wow-delay=".7s"
                     >
@@ -126,7 +126,7 @@ const SuccessStories = () => {
                         </p>
                       </div>
                     </div> */}
-                    {/* <div
+                  {/* <div
                       className="counter-box wow fadeInUp"
                       data-wow-delay=".7s"
                     >

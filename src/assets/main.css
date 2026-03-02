@@ -7384,7 +7384,7 @@ input.main-search-input::placeholder {
   height: 100%;
 }
 .cs_site_header.cs_style_1.cs_type_1 .cs_main_header {
-  background-color: transparent;
+  background-color: white;
   border-bottom: 1px solid #535353;
 }
 .cs_site_header.cs_style_1.cs-sticky-active {
@@ -8169,4 +8169,38 @@ input.main-search-input::placeholder {
 
 .text-sm {
   font-size: 14px;
+}
+
+.cs_site_header,
+.cs_site_header .cs_main_header {
+  background-color: #fff !important;
+}
+
+.hero-responsive-text {
+  font-size: 1.75rem !important;
+  /* text-xl = default */
+}
+
+/* md */
+@media (min-width: 768px) {
+  .hero-responsive-text {
+    font-size: 1.5rem;
+    /* text-2xl */
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .hero-responsive-text {
+    font-size: 1.875rem !important;
+    /* text-3xl */
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .hero-responsive-text {
+    font-size: 2.25rem;
+    /* text-4xl */
+  }
 }

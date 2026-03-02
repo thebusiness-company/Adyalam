@@ -23,7 +23,7 @@ const Footer2 = () => {
                         Stay Connected With <br/> Cutting Edge IT
                     </h2>
                     <div className="main-button wow fadeInUp" data-wow-delay=".5s">
-                        <Link to="/contact"> <span className="theme-btn"> talk TO  A SPECIALIST </span><span className="arrow-btn"> <i className="bi bi-arrow-right"></i></span></Link>
+                        <Link to="/contact"> <span className="theme-btn"> talk to Us </span><span className="arrow-btn"> <i className="bi bi-arrow-right"></i></span></Link>
                     </div>
                 </div>
             </div>
