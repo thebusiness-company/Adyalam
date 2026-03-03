@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const About2 = ({addclass}) => {
 
     const aboutContent = {
-      img: "/assets/img/about/01.jpg",
+      img: "/assets/img/about/ourstory.png",
       subtitle: "Our Story",
       title: "Lets make something awesome together",
       content:

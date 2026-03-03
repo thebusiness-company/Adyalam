@@ -8,7 +8,7 @@ const WhyChoose1 = () => {
         "Because you don’t need more noise. You need marketing that works.",
       content:
         "Every pleasure is to be welcomed and every pain avoided. certain circumstances and owing to the claims welcomed and every pain avoided certain circumstances",
-      img: "/assets/img/team/01.png",
+      img: "/assets/img/home/whychooseadyalam.png",
       list1: " Strategy-first approach",
       list2: "Focus on long-term brand value",
       list3: "Data-driven decision making",

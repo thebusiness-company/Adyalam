@@ -8204,3 +8204,15 @@ input.main-search-input::placeholder {
     /* text-4xl */
   }
 }
+.blur-overlay {
+  position: absolute;
+  inset: 0;
+background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.15));
+  transition: opacity 0.3s ease;
+}
+
+.mt-14{
+  margin-top: 3.5rem;
+}
