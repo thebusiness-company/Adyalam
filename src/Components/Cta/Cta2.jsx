@@ -13,7 +13,7 @@ const Cta2 = () => {
             <div className="container">
                 <div className="cta-contact-wrapper bg-cover" data-background="/assets/img/cta-contact-bg.jpg">
                     <div className="cta-image wow img-custom-anim-left" data-wow-duration="1.5s" data-wow-delay="0.3s">
-                        <img src="/assets/img/contact-img.png" alt="img" />
+                        <img src="/assets/img/contactus.png" alt="img" />
                     </div>
                     <div className="section-title mb-0">
                         <div className="sub-title bg-color-3 wow fadeInUp">

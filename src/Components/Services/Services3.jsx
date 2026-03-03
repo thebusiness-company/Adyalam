@@ -4,55 +4,55 @@ const Services3 = () => {
 
     const chooseContent = [
       {
-        img: "/assets/img/service/icon-1.png",
+        img: "/assets/img/service/icon1.png",
         title: "Reels & Visual Storytelling",
         content:
           "We create short-form videos that communicate your message quickly and effectively. Designed for modern audiences, our reels highlight your brand, products, or services in an engaging format that increases recall, interaction, and digital visibility.",
       },
       {
-        img: "/assets/img/service/icon-2.png",
+        img: "/assets/img/service/icon2.png",
         title: "Ad Creatives",
         content:
           "We design performance-driven ad visuals that capture attention instantly and encourage action. Every creative balances strong design with clear messaging, ensuring your campaigns not only look professional but also generate clicks, enquiries, and conversions.",
       },
       {
-        img: "/assets/img/service/icon-3.png",
+        img: "/assets/img/service/icon3.png",
         title: "Meta Campaigns (FB & Insta Ads)",
         content:
           "We run targeted ad campaigns across Facebook and Instagram to reach the right audience at the right time. By combining precise targeting, compelling creatives, and optimization, we generate visibility, engagement, and enquiries quickly.",
       },
       {
-        img: "/assets/img/service/icon-4.png",
+        img: "/assets/img/service/icon4.png",
         title: "Google Campaigns",
         content:
           "We position your business in front of high-intent users actively searching online. Our Google campaigns use smart keyword targeting and performance tracking to drive qualified traffic, increase leads, and deliver measurable business outcomes.",
       },
       {
-        img: "/assets/img/service/icon-5.png",
+        img: "/assets/img/service/icon5.png",
         title: "Social Media Management",
         content:
           "We manage your brand across social platforms with planned content, consistent posting, and audience engagement. Our approach keeps your business active, relevant, and visible, helping build trust while turning followers into meaningful customer interactions.",
       },
       {
-        img: "/assets/img/service/icon-6.png",
+        img: "/assets/img/service/icon6.png",
         title: "WhatsApp Marketing",
         content:
           "We use WhatsApp to connect with customers instantly through personalized messages, updates, and offers. With high visibility and quick response rates, this channel helps drive immediate engagement, strengthen relationships, and encourage faster decisions.",
       },
       {
-        img: "/assets/img/service/icon-4.png",
+        img: "/assets/img/service/icon7.png",
         title: "Email Marketing",
         content:
           "We craft targeted email campaigns that keep your audience informed, engaged, and connected to your brand. From promotions to follow-ups, our emails nurture relationships, encourage repeat business, and turn existing contacts into loyal customers.",
       },
       {
-        img: "/assets/img/service/icon-5.png",
+        img: "/assets/img/service/icon8.png",
         title: "SEO",
         content:
           "We optimize your website to appear in search results when customers actively look for your services. Through keyword strategy and content improvements, we drive consistent organic traffic that builds long-term visibility and enquiries.",
       },
       {
-        img: "/assets/img/service/icon-6.png",
+        img: "/assets/img/service/icon9.png",
         title: "Lead Generation",
         content:
           "We build targeted campaigns focused on attracting genuine prospects for your business. By capturing and nurturing interest, we help convert attention into qualified enquiries, giving you a steady pipeline of potential customers ready to engage.",

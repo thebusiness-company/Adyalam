@@ -78,7 +78,7 @@ const SuccessStories = () => {
                     className="audience-img wow fadeInUp"
                     data-wow-delay=".3s"
                   >
-                    <img src="/assets/img/audience-img.jpg" alt="img" />
+                    <img src="/assets/img/home/whatwedo.png" alt="img" />
                   </div>
                   {/* <div className="counter-box-area"> */}
                   {/* <div

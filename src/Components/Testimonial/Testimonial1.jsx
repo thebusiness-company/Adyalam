@@ -62,35 +62,41 @@ const Testimonial1 = () => {
       },
       {
         img: "/assets/img/testimonial/usericon.jpeg",
-        title: "R. Karthikeyan",
+        title: "“The Meta campaigns and ad creatives made a huge difference.”",
+        subtitle: "R. Karthikeyan",
         content:
-          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+          " Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
       },
       {
         img: "/assets/img/testimonial/usericon.jpeg",
         title:
           "“From content creation to WhatsApp marketing, everything worked together.”",
-        subtitle: "R. Karthikeyan",
+        subtitle: "Anitha Patil",
         content:
-          "Adyalam handled our digital marketing end-to-end — reels, content, email marketing, and WhatsApp campaigns. Customers now connect with us faster and more frequently.",
+          "Adyalam handled our digital marketing end-to-end - reels, content, email marketing, and WhatsApp campaigns. Customers now connect with us faster and more frequently.",
       },
       {
         img: "/assets/img/testimonial/usericon.jpeg",
-        title: "Anitha Patil",
+        title: "“A performance-driven digital marketing partner.”",
+        subtitle: "Ann Grace Thomas",
         content:
-          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+          "Their team focused on conversion optimization, analytics, and continuous scaling. We always know how our campaigns are performing, and the results are measurable.",
       },
       {
         img: "/assets/img/testimonial/usericon.jpeg",
-        title: "R. Karthikeyan",
+        title:
+          "“They helped us grow with the right mix of SEO, social media marketing, and lead generation.”",
+        subtitle: "Vijay Narayanan",
         content:
-          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+          "Instead of random promotion, we now have structured campaigns that consistently bring traffic and enquiries to our business.",
       },
       {
         img: "/assets/img/testimonial/usericon.jpeg",
-        title: "R. Karthikeyan",
+        title:
+          "“Professional, responsive, and truly focused on business growth.”",
+        subtitle: "Mohammed Idris",
         content:
-          "“The Meta campaigns and ad creatives made a huge difference.” Their Facebook and Instagram marketing helped us reach the right audience. The ad creatives were engaging, and the campaigns generated real conversions, not just likes.",
+          "Adyalam combined Google Ads, Meta advertising, and content strategy to give us strong digital visibility. We’ve seen steady improvement in reach, engagement, and sales.",
       },
     ]; 
 
@@ -264,7 +270,7 @@ const Testimonial1 = () => {
                                   <i className="bi bi-star-fill"></i>
                                   <i className="bi bi-star-fill"></i>
                                 </div> */}
-                                <h6 className="mt-10">{item.title}</h6>
+                                <h6 className="mt-14">{item.title}</h6>
                                 <span>{item.subtitle}</span>
                               </div>
                               <p>{item.content}</p>
