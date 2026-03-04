@@ -4,6 +4,9 @@ import { API_BASE_URL } from "../../config";
 const ContactInfo1 = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [subject, setSubject] = useState("subject");
+    const [accepted, setAccepted] = useState(false);
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(null);
@@ -18,7 +21,7 @@ const ContactInfo1 = () => {
         const res = await fetch(`${API_BASE_URL}/contact`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, message }),
+          body: JSON.stringify({ name, email, phone, subject, accepted, message }),
         });
         if (!res.ok) {
           const errText = await res.text();
@@ -28,8 +31,11 @@ const ContactInfo1 = () => {
         setName("");
         setEmail("");
         setMessage("");
-      } catch (err) {
-        setError(err.message || "Submission failed");
+        setPhone("");
+        setSubject("subject");
+        setAccepted(false);
+      } catch  {
+        setError( "Submission failed");
       } finally {
         setLoading(false);
       }
@@ -87,19 +93,23 @@ const ContactInfo1 = () => {
                       <div className="col-lg-6">
                         <div className="form-clt">
                           <input
-                            type="number"
-                            name="number"
-                            id="number"
+                            type="tel"
+                            name="phone"
+                            id="phone"
                             placeholder="Phone Number"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
                           />
                         </div>
                       </div>
                       <div className="col-lg-6">
                         <div className="form-clt">
                           <select
-                            name="orderby"
+                            name="subject"
                             className="single-select"
-                            aria-label="Shop order"
+                            aria-label="Subject"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
                           >
                             <option value="subject">Subject</option>
                             <option value="complain">Complain</option>
@@ -128,6 +138,8 @@ const ContactInfo1 = () => {
                             type="checkbox"
                             value=""
                             id="flexCheckChecked"
+                            checked={accepted}
+                            onChange={(e) => setAccepted(e.target.checked)}
                           />
                           <label
                             className="form-check-label"
